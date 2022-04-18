@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.networkquality</string>
+	<key>connections</key>
+	<dict>
+		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DAF31486-4088-492F-93C5-22A1031435DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>7F6F4867-2EFD-4C6C-A557-834CAEF04E45</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>FCADA9CE-CF30-45DA-BF67-1DEA3A770623</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>2C6D7412-F08F-4C6D-BE7C-92BB008B5F98</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3C4EECE-879C-4180-AFB0-14EA306486E4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DAF31486-4088-492F-93C5-22A1031435DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Vítor Galvão</string>
+	<key>description</key>
+	<string>Test your internet connection</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Network Quality</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Show in Alfred","arg":"alfred","subtitle":"Keeps Alfred open"},{"title":"Copy to Clipboard","arg":"clipboard","subtitle":"Runs in the background"},{"title":"Show as Large Type","arg":"large_type","subtitle":"Runs in the background"}]</string>
+				<key>keyword</key>
+				<string>netquality</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Check Network Quality</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Testing download and upload capacity takes a few seconds</string>
+				<key>script</key>
+				<string>// Run networkQuality
+const task = $.NSTask.alloc.init
+const stdout = $.NSPipe.pipe
+
+task.executableURL = $.NSURL.alloc.initFileURLWithPath("/usr/bin/networkQuality")
+task.standardOutput = stdout
+task.launchAndReturnError(false)
+
+const dataOut = stdout.fileHandleForReading.readDataToEndOfFile
+const stringOut = $.NSString.alloc.initWithDataEncoding(dataOut, $.NSUTF8StringEncoding).js
+
+// Prepare JSON
+const lines = stringOut.split("\n").slice(1)
+let sfItems = []
+
+sfItems.push({ title: lines[0] })
+
+lines.slice(1).forEach(line =&gt; sfItems.push({
+  title: line,
+  icon: { path: false } // No icon
+}))
+
+JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Checking Network Quality…</string>
+				<key>type</key>
+				<integer>7</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Results copied to clipboard</string>
+				<key>title</key>
+				<string>Network Quality</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DAF31486-4088-492F-93C5-22A1031435DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:results_to}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>alfred</string>
+						<key>outputlabel</key>
+						<string>Alfred</string>
+						<key>uid</key>
+						<string>FCADA9CE-CF30-45DA-BF67-1DEA3A770623</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:results_to}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>clipboard</string>
+						<key>outputlabel</key>
+						<string>Clipboard</string>
+						<key>uid</key>
+						<string>2C6D7412-F08F-4C6D-BE7C-92BB008B5F98</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Large Type</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:full_info}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D3C4EECE-879C-4180-AFB0-14EA306486E4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>results_to</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist="https://raw.githubusercontent.com/alfredapp/network-quality-workflow/master/Workflow/info.plist"
+readonly workflow_url="alfredapp/network-quality-workflow"
+readonly download_type='github_release'
+readonly frequency_check='4'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type f -name 'notificator')"
+
+  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
+    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  # Remote sanity check
+  if ! url_exists "${remote_info_plist}"; then
+    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
+  fi
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+  rm "${tmp_file}"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  readonly download_url="$(
+    if [[ "${download_type}" == 'github_release' ]]; then
+      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
+    else
+      echo "${workflow_url}"
+    fi
+  )"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    readonly download_name="$(basename "${download_url}")"
+    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
+    open "${HOME}/Downloads/${download_name}"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/networkQuality | tail -n +2</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:results_to}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>clipboard</string>
+						<key>outputlabel</key>
+						<string>Clipboard</string>
+						<key>uid</key>
+						<string>7F6F4867-2EFD-4C6C-A557-834CAEF04E45</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Large Type</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.hidealfred</string>
+			<key>uid</key>
+			<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Run `netquality` to test your internet connection. Analysis takes a few seconds to complete.
+
+![](https://user-images.githubusercontent.com/1699443/163657341-0ecd9008-fb6d-4bd7-9dea-eaf080157d18.png)
+
+![](https://user-images.githubusercontent.com/1699443/163657259-6df4cbdf-5f6f-4142-a305-4f7444081b28.png)</string>
+	<key>uidata</key>
+	<dict>
+		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>880</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>55945677-0BE0-4A6E-8389-12EE51352082</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>1255</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
+		<dict>
+			<key>xpos</key>
+			<integer>715</integer>
+			<key>ypos</key>
+			<integer>215</integer>
+		</dict>
+		<key>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>55</integer>
+		</dict>
+		<key>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</key>
+		<dict>
+			<key>xpos</key>
+			<integer>880</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>535</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>535</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
+		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>715</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>DAF31486-4088-492F-93C5-22A1031435DD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1070</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2022.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/alfredapp/network-quality-workflow/</string>
+</dict>
+</plist>
