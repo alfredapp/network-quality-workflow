@@ -608,7 +608,9 @@ fi</string>
 
 ![](https://user-images.githubusercontent.com/1699443/163657341-0ecd9008-fb6d-4bd7-9dea-eaf080157d18.png)
 
-![](https://user-images.githubusercontent.com/1699443/163657259-6df4cbdf-5f6f-4142-a305-4f7444081b28.png)</string>
+![](https://user-images.githubusercontent.com/1699443/163657259-6df4cbdf-5f6f-4142-a305-4f7444081b28.png)
+
+Checking is done via the `networkQuality` tool introduced in macOS Monterey.</string>
 	<key>uidata</key>
 	<dict>
 		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
@@ -700,8 +702,6 @@ fi</string>
 			<integer>50</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2022.1</string>
 	<key>webaddress</key>
