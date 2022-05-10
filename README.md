@@ -2,7 +2,11 @@
 
 Test your internet connection
 
-## Instructions
+<a href='https://github.com/alfredapp/network-quality-workflow/releases/latest/download/Network.Quality.alfredworkflow'>⤓ Download Workflow</a>
+
+## About
+
+<!-- BEGIN ABOUT -->
 
 Run `netquality` to test your internet connection. Analysis takes a few seconds to complete.
 
@@ -12,10 +16,6 @@ Run `netquality` to test your internet connection. Analysis takes a few seconds 
 
 Checking is done via the `networkQuality` tool introduced in macOS Monterey.
 
-## Download
+<!-- END ABOUT -->
 
-[Get the latest release.](https://github.com/alfredapp/network-quality-workflow/releases/latest/download/Network.Quality.alfredworkflow)
-
-## License
-
-3-Clause BSD
+<a href='https://github.com/alfredapp/network-quality-workflow/releases/latest/download/Network.Quality.alfredworkflow'>⤓ Download Workflow</a>
