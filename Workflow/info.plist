@@ -19,6 +19,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>64949D7C-807B-4D2A-8496-8F0B88E97C02</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98C98AF1-3652-4A87-9D73-C811918F617C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>162C4049-4FA3-49CB-8E7E-9DC1B57AF737</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF5F2247-0E34-4EC4-A57A-862611F8D8B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
 		<array>
 			<dict>
@@ -85,7 +110,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+				<string>C8CE3C9D-EB59-40E3-B191-87F036182424</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -146,6 +171,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C8CE3C9D-EB59-40E3-B191-87F036182424</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>64949D7C-807B-4D2A-8496-8F0B88E97C02</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
 		<array>
 			<dict>
@@ -163,7 +201,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+				<string>C8CE3C9D-EB59-40E3-B191-87F036182424</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -421,11 +459,38 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo "${alfred_version}" | cut -d. -f1 | tr -d '\n'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C8CE3C9D-EB59-40E3-B191-87F036182424</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="https://raw.githubusercontent.com/alfredapp/network-quality-workflow/master/Workflow/info.plist"
-readonly workflow_url="alfredapp/network-quality-workflow"
+				<string># Special values for OneUpdater reuse
+readonly workflow_webaddress="$(/usr/libexec/PlistBuddy -c 'print webaddress' './info.plist')"
+readonly workflow_repo="$(basename "$(dirname "${workflow_webaddress}")")/$(basename "${workflow_webaddress}")"
+
+# THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist="${workflow_webaddress}/raw/main/Workflow/info.plist"
+readonly workflow_url="${workflow_repo}"
 readonly download_type='github_release'
 readonly frequency_check='4'
 
@@ -440,10 +505,15 @@ function url_exists {
 }
 
 function notification {
-  local -r notificator="$(find . -type f -name 'notificator')"
+  local -r notificator="$(find . -type d -name 'Notificator.app')"
+  if [[ -n "${notificator}" ]]; then
+    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
 
-  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
-    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
+  if [[ -n "${terminal_notifier}" ]]; then
+    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
     return
   fi
 
@@ -460,15 +530,11 @@ readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_in
 
 # Check for updates
 if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
-  # Remote sanity check
-  if ! url_exists "${remote_info_plist}"; then
-    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
-  fi
+  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
 
   readonly tmp_file="$(mktemp)"
   curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
   readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
-  rm "${tmp_file}"
 
   if [[ "${local_version}" == "${remote_version}" ]]; then
     touch "${local_info_plist}" # Reset timer by touching local file
@@ -481,19 +547,12 @@ if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
     exit 0
   fi
 
-  readonly download_url="$(
-    if [[ "${download_type}" == 'github_release' ]]; then
-      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
-    else
-      echo "${workflow_url}"
-    fi
-  )"
+  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
 
   if url_exists "${download_url}"; then
     notification 'Downloading and installing…'
-    readonly download_name="$(basename "${download_url}")"
-    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
-    open "${HOME}/Downloads/${download_name}"
+    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
+    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
   else
     abort "'workflow_url' (${download_url}) appears to not be reachable."
   fi
@@ -508,7 +567,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>55945677-0BE0-4A6E-8389-12EE51352082</string>
+			<string>98C98AF1-3652-4A87-9D73-C811918F617C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -571,6 +630,36 @@ fi</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>4</string>
+						<key>outputlabel</key>
+						<string>Update</string>
+						<key>uid</key>
+						<string>162C4049-4FA3-49CB-8E7E-9DC1B57AF737</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Version 4</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>64949D7C-807B-4D2A-8496-8F0B88E97C02</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
 						<string>{var:results_to}</string>
 						<key>matchcasesensitive</key>
 						<false/>
@@ -602,13 +691,108 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># Special values for OneUpdater reuse
+readonly workflow_webaddress="$(/usr/libexec/PlistBuddy -c 'print webaddress' './info.plist')"
+readonly workflow_repo_name="$(basename "${workflow_webaddress}" | sed 's/-workflow$//')"
+
+# THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist="https://github.com/alfredapp/legacy-workflows/raw/main/Workflows/${workflow_repo_name}/info.plist"
+readonly workflow_url="https://github.com/alfredapp/legacy-workflows/raw/main/Workflows/${workflow_repo_name}/${workflow_repo_name}.alfredworkflow"
+readonly download_type='direct'
+readonly frequency_check='4'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type d -name 'Notificator.app')"
+  if [[ -n "${notificator}" ]]; then
+    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
+  if [[ -n "${terminal_notifier}" ]]; then
+    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
+    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CF5F2247-0E34-4EC4-A57A-862611F8D8B8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Run `netquality` to test your internet connection. Analysis takes a few seconds to complete.
 
-![](https://user-images.githubusercontent.com/1699443/163657341-0ecd9008-fb6d-4bd7-9dea-eaf080157d18.png)
+![Alfred search for netquality](images/about/netquality.png)
 
-![](https://user-images.githubusercontent.com/1699443/163657259-6df4cbdf-5f6f-4142-a305-4f7444081b28.png)
+![Internet connection results](images/about/results.png)
 
 Checking is done via the `networkQuality` tool introduced in macOS Monterey.</string>
 	<key>uidata</key>
@@ -620,16 +804,14 @@ Checking is done via the `networkQuality` tool introduced in macOS Monterey.</st
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
-		<key>55945677-0BE0-4A6E-8389-12EE51352082</key>
+		<key>64949D7C-807B-4D2A-8496-8F0B88E97C02</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>12</integer>
-			<key>note</key>
-			<string>OneUpdater</string>
+			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1255</integer>
+			<integer>1415</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>215</integer>
 		</dict>
 		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
 		<dict>
@@ -673,12 +855,45 @@ Checking is done via the `networkQuality` tool introduced in macOS Monterey.</st
 			<key>ypos</key>
 			<integer>195</integer>
 		</dict>
+		<key>98C98AF1-3652-4A87-9D73-C811918F617C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>1555</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
 		<key>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</key>
 		<dict>
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
 			<integer>225</integer>
+		</dict>
+		<key>C8CE3C9D-EB59-40E3-B191-87F036182424</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>Major Alfred version</string>
+			<key>xpos</key>
+			<integer>1255</integer>
+			<key>ypos</key>
+			<integer>195</integer>
+		</dict>
+		<key>CF5F2247-0E34-4EC4-A57A-862611F8D8B8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>1555</integer>
+			<key>ypos</key>
+			<integer>345</integer>
 		</dict>
 		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
 		<dict>
@@ -702,8 +917,10 @@ Checking is done via the `networkQuality` tool introduced in macOS Monterey.</st
 			<integer>50</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2022.1</string>
+	<string>2022.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/network-quality-workflow/</string>
 </dict>
