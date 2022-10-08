@@ -208,7 +208,7 @@
 				<key>items</key>
 				<string>[{"title":"Show in Alfred","arg":"alfred","subtitle":"Keeps Alfred open"},{"title":"Copy to Clipboard","arg":"clipboard","subtitle":"Runs in the background"},{"title":"Show as Large Type","arg":"large_type","subtitle":"Runs in the background"}]</string>
 				<key>keyword</key>
-				<string>netquality</string>
+				<string>{var:test_keyword}</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -517,6 +517,29 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/networkQuality | tail -n +2</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alignment</key>
 				<integer>0</integer>
 				<key>backgroundcolor</key>
@@ -542,29 +565,6 @@ fi</string>
 			<string>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/networkQuality | tail -n +2</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -608,13 +608,13 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Run `netquality` to test your internet connection. Analysis takes a few seconds to complete.
+	<string>## Usage
+
+Run the Test Keyword (default: `netquality`) to test your internet connection. Analysis takes a few seconds to complete.
 
 ![Alfred search for netquality](images/about/netquality.png)
 
-![Internet connection results](images/about/results.png)
-
-Checking is done via the `networkQuality` tool introduced in macOS Monterey.</string>
+![Internet connection results](images/about/results.png)</string>
 	<key>uidata</key>
 	<dict>
 		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
@@ -707,11 +707,31 @@ Checking is done via the `networkQuality` tool introduced in macOS Monterey.</st
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variablesdontexport</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>netquality</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Test Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>test_keyword</string>
+		</dict>
+	</array>
 	<key>version</key>
-	<string>2022.3</string>
+	<string>2022.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/network-quality-workflow/</string>
 </dict>
