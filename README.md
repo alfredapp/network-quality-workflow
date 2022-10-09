@@ -4,8 +4,6 @@ Test your internet connection
 
 <a href='https://github.com/alfredapp/network-quality-workflow/releases/latest/download/Network.Quality.alfredworkflow'>⤓ Download Workflow</a>
 
-## About
-
 ## Usage
 
 Run the Test Keyword (default: `netquality`) to test your internet connection. Analysis takes a few seconds to complete.
@@ -13,5 +11,3 @@ Run the Test Keyword (default: `netquality`) to test your internet connection. A
 ![Alfred search for netquality](Workflow/images/about/netquality.png)
 
 ![Internet connection results](Workflow/images/about/results.png)
-
-<a href='https://github.com/alfredapp/network-quality-workflow/releases/latest/download/Network.Quality.alfredworkflow'>⤓ Download Workflow</a>
