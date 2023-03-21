@@ -603,7 +603,7 @@ Examine your internet connection via the `netquality` keyword. Analysis takes a 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.5</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/network-quality-workflow/</string>
 </dict>

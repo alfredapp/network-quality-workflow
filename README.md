@@ -2,11 +2,11 @@
 
 Test your internet connection
 
-<a href='https://alfred.app/workflows/alfredapp/network-quality'>⤓ Install on the Alfred Gallery</a>
+[⤓ Install on the Alfred Gallery](https://alfred.app/workflows/alfredapp/network-quality)
 
 ## Usage
 
-Examine your internet connection via the Test Keyword (default: `netquality`). Analysis takes a few seconds to complete.
+Examine your internet connection via the `netquality` keyword. Analysis takes a few seconds to complete.
 
 ![Alfred search for netquality](Workflow/images/about/netquality.png)
 
