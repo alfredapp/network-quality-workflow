@@ -493,7 +493,7 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 	<key>readme</key>
 	<string>## Usage
 
-Examine your internet connection via the Test Keyword (default: `netquality`). Analysis takes a few seconds to complete.
+Examine your internet connection via the `netquality` keyword. Analysis takes a few seconds to complete.
 
 ![Alfred search for netquality](images/about/netquality.png)
 
