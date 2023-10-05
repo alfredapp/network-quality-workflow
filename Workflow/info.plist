@@ -235,7 +235,7 @@
 const task = $.NSTask.alloc.init
 const stdout = $.NSPipe.pipe
 
-task.executableURL = $.NSURL.alloc.initFileURLWithPath("/usr/bin/networkQuality")
+task.executableURL = $.NSURL.fileURLWithPath("/usr/bin/networkQuality")
 task.standardOutput = stdout
 task.launchAndReturnError(false)
 
