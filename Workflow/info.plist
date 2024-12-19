@@ -6,11 +6,62 @@
 	<string>com.alfredapp.vitor.networkquality</string>
 	<key>connections</key>
 	<dict>
-		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
+		<key>39D52D1A-14E3-49E9-88F1-AE303A8059DD</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DAF31486-4088-492F-93C5-22A1031435DD</string>
+				<string>E0C19652-944C-48E9-B953-577346E5F618</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>62CAC355-33D1-4325-9C89-C2738FB6A124</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CBE7C201-5CFD-4F7B-AFAD-A9E03588C048</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>19955265-8D06-4284-978F-BDA34A212707</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4584567E-2F64-4CBC-8B2D-3CCC5DC140C1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>0B149E0A-995B-48E0-A163-31761D485B09</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7004367E-7EFC-4767-8B9D-F05E23F12DC9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>05A15400-E41E-438F-938B-B218CCAE8046</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3E3B9122-D1CD-4FA8-BDF1-3F97551C2EC4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E75BF1E7-5E8F-467B-9925-8AE34E9B6CD2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,75 +70,23 @@
 				<false/>
 			</dict>
 		</array>
-		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>7F6F4867-2EFD-4C6C-A557-834CAEF04E45</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>FCADA9CE-CF30-45DA-BF67-1DEA3A770623</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>2C6D7412-F08F-4C6D-BE7C-92BB008B5F98</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</key>
+		<key>4584567E-2F64-4CBC-8B2D-3CCC5DC140C1</key>
 		<array/>
-		<key>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</key>
+		<key>461B3A60-A70F-4827-A709-1ED8CFC58DA8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D3C4EECE-879C-4180-AFB0-14EA306486E4</string>
+				<string>7F3CDD29-706B-4356-A726-B12E0401585B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>ABDA524D-991E-4430-A90F-7D107D81C09F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -96,71 +95,44 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>DAF31486-4088-492F-93C5-22A1031435DD</key>
+		<key>7004367E-7EFC-4767-8B9D-F05E23F12DC9</key>
 		<array/>
-		<key>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</key>
+		<key>7F3CDD29-706B-4356-A726-B12E0401585B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</string>
+				<string>3E3B9122-D1CD-4FA8-BDF1-3F97551C2EC4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<true/>
+				<false/>
+			</dict>
+		</array>
+		<key>E0C19652-944C-48E9-B953-577346E5F618</key>
+		<array/>
+		<key>E75BF1E7-5E8F-467B-9925-8AE34E9B6CD2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39D52D1A-14E3-49E9-88F1-AE303A8059DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A550D779-5E30-44A0-9606-A203D9B5B199</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -177,104 +149,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Show in Alfred","arg":"alfred","subtitle":"Keeps Alfred open"},{"title":"Copy to Clipboard","arg":"clipboard","subtitle":"Runs in the background"},{"title":"Show as Large Type","arg":"large_type","subtitle":"Runs in the background"}]</string>
-				<key>keyword</key>
-				<string>{var:test_keyword}</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
+				<key>button1</key>
+				<string>Close</string>
+				<key>button2</key>
 				<string></string>
-				<key>subtext</key>
+				<key>button3</key>
 				<string></string>
+				<key>description</key>
+				<string>{query}</string>
 				<key>title</key>
-				<string>Check Network Quality</string>
-				<key>withspace</key>
-				<false/>
+				<string>Summary</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.utility.dialog</string>
 			<key>uid</key>
-			<string>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</string>
+			<string>E0C19652-944C-48E9-B953-577346E5F618</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Testing download and upload capacity takes a few seconds</string>
-				<key>script</key>
-				<string>// Run networkQuality
-const task = $.NSTask.alloc.init
-const stdout = $.NSPipe.pipe
-
-task.executableURL = $.NSURL.fileURLWithPath("/usr/bin/networkQuality")
-task.standardOutput = stdout
-task.launchAndReturnError(false)
-
-const dataOut = stdout.fileHandleForReading.readDataToEndOfFileAndReturnError(false)
-const stringOut = $.NSString.alloc.initWithDataEncoding(dataOut, $.NSUTF8StringEncoding).js
-
-// Prepare JSON
-const lines = stringOut.split("\n").slice(1)
-let sfItems = []
-
-sfItems.push({ title: lines[0] })
-
-lines.slice(1).forEach(line =&gt; sfItems.push({
-  title: line,
-  icon: { path: false } // No icon
-}))
-
-JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Checking Network Quality…</string>
-				<key>type</key>
-				<integer>7</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -286,35 +177,16 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Results copied to clipboard</string>
+				<string>{query}</string>
 				<key>title</key>
-				<string>Network Quality</string>
+				<string>Summary</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>DAF31486-4088-492F-93C5-22A1031435DD</string>
+			<string>CBE7C201-5CFD-4F7B-AFAD-A9E03588C048</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>325E35A2-6404-4314-975D-116B8063FBD6</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -323,79 +195,85 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:results_to}</string>
+						<string>{var:show_results}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>alfred</string>
+						<string>dialog_conditional</string>
 						<key>outputlabel</key>
-						<string>Alfred</string>
+						<string>Dialog</string>
 						<key>uid</key>
-						<string>FCADA9CE-CF30-45DA-BF67-1DEA3A770623</string>
+						<string>62CAC355-33D1-4325-9C89-C2738FB6A124</string>
 					</dict>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:results_to}</string>
+						<string>{var:show_results}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>clipboard</string>
+						<string>post_notification</string>
 						<key>outputlabel</key>
-						<string>Clipboard</string>
+						<string>Notification</string>
 						<key>uid</key>
-						<string>2C6D7412-F08F-4C6D-BE7C-92BB008B5F98</string>
+						<string>19955265-8D06-4284-978F-BDA34A212707</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:show_results}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>text_view</string>
+						<key>outputlabel</key>
+						<string>Text View</string>
+						<key>uid</key>
+						<string>0B149E0A-995B-48E0-A163-31761D485B09</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:show_results}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>large_type</string>
+						<key>outputlabel</key>
+						<string>Large Type</string>
+						<key>uid</key>
+						<string>05A15400-E41E-438F-938B-B218CCAE8046</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Large Type</string>
+				<string></string>
 				<key>hideelse</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</string>
+			<string>39D52D1A-14E3-49E9-88F1-AE303A8059DD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{var:full_info}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
+				<key>tasksettings</key>
 				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/text-processing/text.lines.strip.leading.1</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>D3C4EECE-879C-4180-AFB0-14EA306486E4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>results_to</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</string>
+			<string>3E3B9122-D1CD-4FA8-BDF1-3F97551C2EC4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -403,24 +281,93 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
-				<true/>
+				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>/usr/bin/networkQuality | tail -n +2</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>/usr/bin/networkQuality</string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</string>
+			<string>7F3CDD29-706B-4356-A726-B12E0401585B</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:test_keyword}</string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>{const:alfred_workflow_description}</string>
+				<key>text</key>
+				<string>{const:alfred_workflow_name}</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>461B3A60-A70F-4827-A709-1ED8CFC58DA8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>E75BF1E7-5E8F-467B-9925-8AE34E9B6CD2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>behaviour</key>
+				<integer>0</integer>
+				<key>fontmode</key>
+				<integer>0</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
+				<key>footertext</key>
+				<string></string>
+				<key>inputfile</key>
+				<string></string>
+				<key>inputtype</key>
+				<integer>0</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.text</string>
+			<key>uid</key>
+			<string>4584567E-2F64-4CBC-8B2D-3CCC5DC140C1</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -447,52 +394,47 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
-			<string>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</string>
+			<string>7004367E-7EFC-4767-8B9D-F05E23F12DC9</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:results_to}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>clipboard</string>
-						<key>outputlabel</key>
-						<string>Clipboard</string>
-						<key>uid</key>
-						<string>7F6F4867-2EFD-4C6C-A557-834CAEF04E45</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Large Type</string>
-				<key>hideelse</key>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</string>
+			<string>A550D779-5E30-44A0-9606-A203D9B5B199</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>unstackview</key>
+				<key>lastpathcomponent</key>
 				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Will take a few seconds to finnish</string>
+				<key>title</key>
+				<string>Running Network Test</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</string>
+			<string>ABDA524D-991E-4430-A90F-7D107D81C09F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -500,89 +442,109 @@ JSON.stringify({ variables: { full_info: lines.join("\n") }, items: sfItems })</
 	<key>readme</key>
 	<string>## Usage
 
-Examine your internet connection via the `netquality` keyword. Analysis takes a few seconds to complete.
+Examine your internet connection via the `netquality` keyword.
 
-![Alfred search for netquality](images/about/netquality.png)
+![Alfred search for netquality](images/about/keyword.png)
 
-![Internet connection results](images/about/results.png)</string>
+Analysis takes a few seconds to complete. Results are copied to the clipboard and displayed in the viewer defined in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+
+![Showing results as Dialog](images/about/dialog.png)
+
+![Showing results as Notification](images/about/notification.png)
+
+![Showing results as Text View](images/about/text.png)</string>
 	<key>uidata</key>
 	<dict>
-		<key>325E35A2-6404-4314-975D-116B8063FBD6</key>
+		<key>39D52D1A-14E3-49E9-88F1-AE303A8059DD</key>
 		<dict>
+			<key>note</key>
+			<string>Determine type of output</string>
 			<key>xpos</key>
-			<real>880</real>
+			<real>740</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>210</real>
 		</dict>
-		<key>68C9ACDE-037B-4AD3-AF10-2EE6D505A490</key>
+		<key>3E3B9122-D1CD-4FA8-BDF1-3F97551C2EC4</key>
 		<dict>
+			<key>note</key>
+			<string>Remove title from results</string>
 			<key>xpos</key>
-			<real>715</real>
+			<real>435</real>
 			<key>ypos</key>
-			<real>215</real>
+			<real>220</real>
 		</dict>
-		<key>6C90D65E-E3F6-4CD6-948F-056C1E3160DA</key>
+		<key>4584567E-2F64-4CBC-8B2D-3CCC5DC140C1</key>
 		<dict>
 			<key>xpos</key>
-			<real>330</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>290</real>
 		</dict>
-		<key>747CF3EA-A108-409A-BB1C-53E6A8D4DA39</key>
+		<key>461B3A60-A70F-4827-A709-1ED8CFC58DA8</key>
 		<dict>
+			<key>note</key>
+			<string>Trigger workflow</string>
 			<key>xpos</key>
-			<real>880</real>
-			<key>ypos</key>
-			<real>195</real>
-		</dict>
-		<key>7F9B57DE-65F3-40DB-A0D1-4A1005AED5FE</key>
-		<dict>
-			<key>xpos</key>
-			<real>535</real>
-			<key>ypos</key>
-			<real>50</real>
-		</dict>
-		<key>7FF9D30D-E287-4DC6-8786-8F513D4CF5DD</key>
-		<dict>
-			<key>xpos</key>
-			<real>240</real>
-			<key>ypos</key>
 			<real>80</real>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
-		<key>93AFF868-B1D1-4C6C-9025-ECC2CC5FD66C</key>
+		<key>7004367E-7EFC-4767-8B9D-F05E23F12DC9</key>
 		<dict>
 			<key>xpos</key>
-			<real>535</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>420</real>
 		</dict>
-		<key>A5DC84A2-82EA-4B3E-BB22-EB24A82A5A6E</key>
+		<key>7F3CDD29-706B-4356-A726-B12E0401585B</key>
+		<dict>
+			<key>note</key>
+			<string>Run network test command</string>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>A550D779-5E30-44A0-9606-A203D9B5B199</key>
+		<dict>
+			<key>note</key>
+			<string>Copy results to clipboard</string>
+			<key>xpos</key>
+			<real>720</real>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
+		<key>ABDA524D-991E-4430-A90F-7D107D81C09F</key>
+		<dict>
+			<key>note</key>
+			<string>Show notification, as test will take a while to finish and return results</string>
+			<key>xpos</key>
+			<real>260</real>
+			<key>ypos</key>
+			<real>420</real>
+		</dict>
+		<key>CBE7C201-5CFD-4F7B-AFAD-A9E03588C048</key>
 		<dict>
 			<key>xpos</key>
-			<real>455</real>
+			<real>960</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>160</real>
 		</dict>
-		<key>D3C4EECE-879C-4180-AFB0-14EA306486E4</key>
+		<key>E0C19652-944C-48E9-B953-577346E5F618</key>
 		<dict>
 			<key>xpos</key>
-			<real>715</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>90</real>
 		</dict>
-		<key>DAF31486-4088-492F-93C5-22A1031435DD</key>
+		<key>E75BF1E7-5E8F-467B-9925-8AE34E9B6CD2</key>
 		<dict>
+			<key>note</key>
+			<string>Ensure there is no surrounding whitespace</string>
 			<key>xpos</key>
-			<real>1070</real>
+			<real>620</real>
 			<key>ypos</key>
-			<real>50</real>
-		</dict>
-		<key>FBDDA878-AE14-431E-9CCB-D8C69A17DBB0</key>
-		<dict>
-			<key>xpos</key>
-			<real>60</real>
-			<key>ypos</key>
-			<real>50</real>
+			<real>250</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -607,6 +569,40 @@ Examine your internet connection via the `netquality` keyword. Analysis takes a 
 			<string>textfield</string>
 			<key>variable</key>
 			<string>test_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>dialog_conditional</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Dialog</string>
+						<string>dialog_conditional</string>
+					</array>
+					<array>
+						<string>Notification</string>
+						<string>post_notification</string>
+					</array>
+					<array>
+						<string>Text View</string>
+						<string>text_view</string>
+					</array>
+					<array>
+						<string>Large Type</string>
+						<string>large_type</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Results Viewer</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>show_results</string>
 		</dict>
 	</array>
 	<key>version</key>
