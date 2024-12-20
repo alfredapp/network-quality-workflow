@@ -6,8 +6,14 @@ Test your internet connection
 
 ## Usage
 
-Examine your internet connection via the `netquality` keyword. Analysis takes a few seconds to complete.
+Examine your internet connection via the `netquality` keyword.
 
-![Alfred search for netquality](Workflow/images/about/netquality.png)
+![Alfred search for netquality](Workflow/images/about/keyword.png)
 
-![Internet connection results](Workflow/images/about/results.png)
+Analysis takes a few seconds to complete. Results are copied to the clipboard and displayed in the viewer defined in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+
+![Showing results as Dialog](Workflow/images/about/dialog.png)
+
+![Showing results as Notification](Workflow/images/about/notification.png)
+
+![Showing results as Text View](Workflow/images/about/text.png)
