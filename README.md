@@ -12,8 +12,14 @@ Examine your internet connection via the `netquality` keyword.
 
 Analysis takes a few seconds to complete. Results are copied to the clipboard and displayed in the viewer defined in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
+### Showing results as Dialog
 ![Showing results as Dialog](Workflow/images/about/dialog.png)
 
+### Showing results as Notification
 ![Showing results as Notification](Workflow/images/about/notification.png)
 
+### Showing results as Text View
 ![Showing results as Text View](Workflow/images/about/text.png)
+
+### Showing results as Large Type
+![Showing results as Large Type](Workflow/images/about/large.png)
